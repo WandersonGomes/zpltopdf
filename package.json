@@ -1,0 +1,22 @@
+{
+  "name": "zpltopdf",
+  "version": "0.0.1",
+  "description": "App convert ZPL file to PDF file",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "zpl",
+    "pdf",
+    "print",
+    "desktop"
+  ],
+  "author": "Wanderson Gomes",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^11.2.3",
+    "electron-reload": "^1.5.0",
+    "request": "^2.88.2"
+  }
+}

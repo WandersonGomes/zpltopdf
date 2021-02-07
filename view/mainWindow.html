@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZPL to PDF</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container-logo">
+            <h2>ZPL to PDF</h2>
+        </div>
+    </header>
+
+    <main class="container-main">
+        <div class="container-input">
+            <form id="form-input-paths">
+                <div class="row-input">
+                    <input 
+                        name="input-file-zpl"
+                        id="input-file-zpl" 
+                        type="text"
+                        class="input-text"
+                        value=""
+                        required
+                        />
+                    <button onclick="setFileZPL()">Choose File ZPL</button>
+                </div>
+                <div class="row-input">
+                    <input
+                        name="input-directory-output"
+                        id="input-directory-output"
+                        type="text"
+                        class="input-text"
+                        value=""
+                        required
+                    />
+                    <button onclick="setDirectoryOutput()">Choose Directory Output</button>
+                </div>
+
+                <button type="submit">Generate PDF</button>
+            </form>
+        </div>
+
+        <div>
+            <span id="console-message"></span>
+        </div>
+    </main>
+
+    <footer class="container-footer">
+        <div class="text-footer">
+            <p>Autor: Wanderson Gomes - dersom100@gmail.com</p>
+        </div>
+    </footer>
+
+    <!--JAVASCRIPT-->
+    <script src="view.js"></script>
+</body>
+</html>
